@@ -50,7 +50,7 @@ public class MainController extends PApplet
     public void setup() 
     {
         frameRate(60);
-        colorMode(RGB);
+        colorMode(HSB);
         background(0);
 
         minim = new Minim(this);
@@ -95,6 +95,25 @@ public class MainController extends PApplet
 
     public void draw() 
     {   
+
+        // these are variables that are needed for the programs
+        float halfH = height / 2;
+        float average = 0;
+        float sum = 0;
+        float off = 0;
+        off += 1;
+        // Calculate sum and average of the samples
+        // Also lerp each element of buffer;
+        for(int i = 0 ; i < ab.size() ; i ++)
+        {
+            sum += abs(ab.get(i));
+            lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.05f);
+        }
+        average= sum / (float) ab.size();
+        smoothedAmplitude = lerp(smoothedAmplitude, average, 0.1f);
+        float cx = width / 2;
+        float cy = height / 2;
+
         Start = 0;
         Exit = 0;
         if (OptionSelected == false) 
@@ -212,7 +231,7 @@ public class MainController extends PApplet
                     float c = map(i, 0, ab.size(), 0, 255);
 
                     // set the stroke to the value of c
-                    stroke(c, c, c);
+                    stroke(c, 255, 255);
 
                     // set the fill to black
                     fill(0, 0, 0);
@@ -221,7 +240,7 @@ public class MainController extends PApplet
                     rect(width / 2, height / 2, 50, 50);
 
                     // rotate the square based on the music
-                    rotate(lerpedBuffer[i] * (height / 2) * 100.0f);
+                    rotate(lerpedBuffer[i] * 100.0f);
                 }
                 break;
 
