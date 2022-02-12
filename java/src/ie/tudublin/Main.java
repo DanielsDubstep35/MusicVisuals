@@ -5,13 +5,13 @@ import example.MyVisual;
 public class Main
 {	
 
-	public static void gno() 
+	public static void maincontroller() 
 	{
 		String[] a = {"MAIN"};
-		processing.core.PApplet.runSketch( a, new Gno());
+		processing.core.PApplet.runSketch( a, new MainController());
 	}
 
-	public void startUI()
+	public static void startUI()
 	{
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new MyVisual());		
@@ -19,6 +19,6 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		gno();	
+		maincontroller();	
 	}
 }

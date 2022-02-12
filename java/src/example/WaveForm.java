@@ -1,9 +1,9 @@
 package example;
 
-import processing.core.*;
+import processing.core.PApplet;
 
 // This is an example of a visual that renders the waveform
-public class WaveForm
+public class WaveForm extends PApplet
 {
     MyVisual mv;
     float cy = 0;

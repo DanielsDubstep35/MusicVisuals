@@ -6,7 +6,7 @@ public class CubeVisual1 extends Visual
 {
     public void settings()
     {
-        size(800, 600, P3D);
+        size(800, 600);
         //fullScreen(P3D, SPAN);
     }
 
