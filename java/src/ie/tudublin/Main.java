@@ -1,11 +1,15 @@
 package ie.tudublin;
 
-import example.CubeVisual;
 import example.MyVisual;
-import example.RotatingAudioBands;
 
 public class Main
 {	
+
+	public static void gno() 
+	{
+		String[] a = {"MAIN"};
+		processing.core.PApplet.runSketch( a, new Gno());
+	}
 
 	public void startUI()
 	{
@@ -15,7 +19,6 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		Main main = new Main();
-		main.startUI();			
+		gno();	
 	}
 }
