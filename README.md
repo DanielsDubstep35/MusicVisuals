@@ -96,5 +96,5 @@ case 9:
 
 Finally, heres the Youtube video of the assignment in action:
 
-![YouTube](https://img.youtube.com/watch?v=21Q2ZVyAuiI)
+[![Youtube](https://img.youtube.com/vi/21Q2ZVyAuiI/0.jpg)](https://www.youtube.com/watch?v=21Q2ZVyAuiI "Music Visualizer Assignment")
 
