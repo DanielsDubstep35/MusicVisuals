@@ -1,5 +1,6 @@
 package ie.tudublin;
 
+/* 
 public class TetrisBoard {
 
     int bottomborder = 20 * 40;
@@ -52,4 +53,4 @@ public class TetrisBoard {
         
     } */
 
-}
+// }

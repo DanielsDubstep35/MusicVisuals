@@ -1,4 +1,4 @@
-package ie.tudublin;
+/* package ie.tudublin;
 
 // import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
@@ -18,7 +18,7 @@ public class Tetromino {
     int Iblock[][] = { { 0 * 40, 0 * 40 }, { 0 * 40, 1 * 40 }, { 0 * 40, 2 * 40 }, { 0 * 40, 3 * 40 } };
 
     // enumerator for random pieces
-    /* 
+    
     public enum Piece {
         Lblock, Jblock, Sblock, Zblock, Tblock, Oblock, Iblock;
 
@@ -27,7 +27,7 @@ public class Tetromino {
             return values()[random.nextInt(values().length)];
         }
     }
-    */
+    
 
     // The next variables is information that the game uses
 
@@ -41,14 +41,13 @@ public class Tetromino {
     int ghostRotation;
     int nextPiece[][];
 
-    /*
+    
     // We need a constructor to get the currently used piece, and some other things like the current rotation, or the next piece
     public Tetromino(int currentPiece, int currentRotation, int nextPiece) {
         this.currentPiece = currentPiece;
         this.currentRotation = currentRotation;
         this.nextPiece = nextPiece;
     }
-    */
 
     // This will draw the piece, as well as handle the movement of the piece
     public void DrawTetromino(MainController mc) {
@@ -112,3 +111,4 @@ public class Tetromino {
     }
 
 }
+ */
