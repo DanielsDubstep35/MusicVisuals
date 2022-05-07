@@ -96,5 +96,5 @@ case 9:
 
 Finally, heres the Youtube video of the assignment in action:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+[![YouTube](https://www.youtube.com/watch?v=21Q2ZVyAuiI)
 
